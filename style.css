@@ -1,0 +1,251 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.bg-l{
+    background-color: #1e303f8f;
+    border-radius: 2px;
+    color: white;
+    padding: 0px 4px;
+}
+
+#main-header{
+    background-image: url(images/leaf-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position-y: center;
+    padding: 10px 0px;
+    margin-top: 20px;
+    position:relative;
+}
+.head-info{
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+#design{
+    color: red;
+    
+}
+ 
+.head-infos{
+    background-color: rgba(245, 222, 179, 0.226);
+    border-radius: 20px;
+    padding: 5px ;
+}
+.text-co{
+    color:black;
+    font-weight: 400;
+}
+.get-str{
+    background-color: #DA062C;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 3px 4px;
+    border-radius: 5px;
+}
+#main{
+    background-color: #E0E0E0;
+    /* border-radius: 7px; */
+
+}
+.fs-l{
+    font-size: px;
+    padding: 2px 0px;
+    border-radius: 10px;
+}
+.padi{
+    padding: 10px;
+    border-radius: 35px;
+    
+}
+
+#modal{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* right: 150px; */
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    display: none;
+
+}
+.offer{
+    background-color: rgba(245, 222, 179, 0.521);
+    padding: 15px;
+    margin-top: 7px;
+}
+.offer-info{
+    text-align: center;
+    font-size: 18px;
+}
+/* succes message */
+#success-message{
+    padding: 10px;
+    background-color: darkorchid;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    display: none;
+}
+#failor-message{  
+    padding: 10px;
+    background-color:#DA062C;
+    color: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    display: none;
+}
+.suc-icon{
+    font-size: 35px;
+    text-align: center;
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    
+}
+.suc-info{
+    font-size: 20px;
+    margin-top: 2px;
+
+}
+.close-icon a{
+    text-decoration: none;
+    color: white;
+    font-size:22px ;
+    cursor: pointer;
+}
+/* starteducation */
+#education{
+    margin-top: 5px;
+    background-color: rgba(119, 136, 153, 0.418);
+    overflow: hidden;
+}
+.edu{
+    border: none;
+    outline: none;
+    padding: 2px 10px;
+    color: white;
+    background-color: #DA062C;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 50px;
+    border-bottom: 3px solid white;
+}
+ .edu-2{
+    border: none;
+    outline: none;
+    padding: 2px 10px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-left: 50px; 
+    transition: 3s ease-in-out; 
+    
+ }
+ .edu-2:hover{
+     border-bottom: 4px solid black;
+
+
+ }
+ #educa{
+     display: none;
+ }
+ /* start project */
+ .project{
+     background-color: lavender;
+     margin-top: 5px;
+     overflow: hidden;
+ }
+ #parent{
+    position: relative;
+
+    overflow: hidden;
+ }
+ #child-but{
+     background-color:gainsboro;
+     border: none;
+     border-radius: 6px;
+     outline: none;
+     padding: 1px 7px;
+     font-size: 20px;
+     position: absolute;
+     top: 220px;
+     right: 120px;
+     left: 120px;
+     display: none;
+     
+ }
+ #parent:hover #child-but{
+     display: block;
+ }
+ #child-but:hover{
+     border-bottom: 2px solid lightcoral;
+ }
+@media  (min-width:305px)and (max-width:640px) { 
+ 
+    .head-info{
+        font-size: 19px;
+        font-weight: 300;
+        
+        
+    }
+    .text-co{
+        margin-top: 10px;
+    }
+
+    #modal{
+        width: 100%;
+    }
+    .mt-2{
+        text-align: center;
+    }
+    .smal-icon{
+        display: block;
+        margin: 6px 0px;
+    }
+    .fs-l{
+    margin: 0 auto;
+    
+    }
+    .bottom{
+        display: inline-block;
+       margin-bottom: 6px;
+    }
+    .get-str{
+        margin-top: 6px;
+    }
+    .but-gro{
+        display: flex;
+        justify-content: space-between;
+    }
+    .edu{
+        /* display: flex; */
+        margin-left: 4px;
+    
+    }
+    .edu-2{
+        margin-left: 0px;
+        margin-right: 4px;
+    }
+    #child-but{
+        font-size: 16px;
+        padding: 0px;
+        border-radius: 3px;
+        right: 86px;
+        left: 86px;
+    }
+   
+}

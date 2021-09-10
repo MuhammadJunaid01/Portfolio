@@ -58,5 +58,24 @@ const Experience = () => {
 };
 const project = () => {
     window.open("https://assignment-5-macbook-pro-junaid.netlify.app/", "_blank");
-    console.log('kaj houche')
+}
+
+const project2 = () => {
+    window.open("https://trusting-jackson-c8117d.netlify.app/", "_blank");
+}
+const project3 = () => {
+    window.open("https://junaid01-rest-app.netlify.app/", "_blank");
+}
+const hireMe = () => {
+    // setTimeout(Hire, 10000)
+    const hireDiv = document.getElementById('hire-me');
+    hireDiv.style.display = 'block';
+    document.getElementById('hireClose-icon').addEventListener('click', function () {
+        hireDiv.style.display = 'none';
+    })
+
+}
+
+const facebook = () => {
+    window.open("https://www.facebook.com/profile.php?id=100009224856897", "_blank");
 }

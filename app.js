@@ -79,3 +79,24 @@ const hireMe = () => {
 const facebook = () => {
     window.open("https://www.facebook.com/profile.php?id=100009224856897", "_blank");
 }
+const sendMessage = () => {
+    const inpEmail = document.getElementById('inp-email');
+    const inpEmailValue = inpEmail.value;
+    const Name = document.getElementById('inp-name');
+    const NameValue = Name.value
+    const Numbers = document.getElementById('inp-number');
+    const numberValue = Numbers.value;
+    const service = document.getElementById('inp-service');
+    const serviceValue = service.value;
+    const textarea = document.getElementById('exampleFormControlTextarea1');
+    const textareavalue = textarea.value
+    if (inpEmailValue || NameValue || numberValue || serviceValue || textareavalue === '') {
+        const failorTextMes = document.getElementById('failor-textMesa');
+        failorTextMes.style.display = 'block';
+        document.getElementById('close-failTextrea').addEventListener('click', function () {
+            failorTextMes.style.display = 'none';
+        })
+    }
+
+
+}

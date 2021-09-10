@@ -123,7 +123,8 @@
                     </div>
                     <!-- failor message -->
                     <div class="col-lg-4">
-                        <div class="animate__animated animate__bounce animate__bounceInLeft" id="failor-message">
+                        <div class="animate__animated animate__bounce animate__bounceInLeft failor-message"
+                            id="failor-message">
                             <div class="suc-icon">
                                 <span><i class="far fa-check-circle"></i></span>
                             </div>
@@ -551,20 +552,35 @@
             <!-- start footer form area -->
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3"></div>
+                    <div class="col-lg-4">
+                        <div class="animate__animated animate__bounce animate__bounceInLeft failor-message2"
+                            id="failor-textMesa">
+                            <div class="suc-icon">
+                                <span><i class="far fa-check-circle"></i></span>
+                            </div>
+                            <div class="flex">
+                                <div class="suc-info">
+                                    <p>Please!Give Valid Email & Password!</p>
+                                </div>
+                                <div id="close" class="close-icon ms-3">
+                                    <a id="close-failTextrea"><i class="far fa-times-circle"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6 form">
                         <div class="mb-3">
-                            <input type="text" name="" class="form-inp " placeholder="Email:">
-                            <input type="text" name="" class="form-inp " placeholder="Name:">
-                            <input type="number" name="" class="form-inp" placeholder="Phone Number:">
-                            <input type="text" name="" class="form-inp" placeholder="Select Service:">
+                            <input type="text" id="inp-email" name="" class="form-inp " placeholder="Email:">
+                            <input type="text" id="inp-name" name="" class="form-inp " placeholder="Name:">
+                            <input type="number" id="inp-number" name="" class="form-inp" placeholder="Phone Number:">
+                            <input type="text" id="inp-service" name="" class="form-inp" placeholder="Select Service:">
 
                         </div>
                         <div class="">
                             <label for="exampleFormControlTextarea1" class="form-label">Message....</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <button id="form-but">Send Your Message</button>
+                        <button onclick="sendMessage()" id="form-but">Send Your Message</button>
                     </div>
                 </div>
             </div>

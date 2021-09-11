@@ -88,15 +88,53 @@ const sendMessage = () => {
     const numberValue = Numbers.value;
     const service = document.getElementById('inp-service');
     const serviceValue = service.value;
-    const textarea = document.getElementById('exampleFormControlTextarea1');
+    const textarea = document.getElementById('message');
     const textareavalue = textarea.value
-    if (inpEmailValue || NameValue || numberValue || serviceValue || textareavalue === '') {
+    if (!inpEmailValue == true || !NameValue == true || !numberValue == true || !serviceValue == true || !textareavalue == true) {
         const failorTextMes = document.getElementById('failor-textMesa');
         failorTextMes.style.display = 'block';
         document.getElementById('close-failTextrea').addEventListener('click', function () {
             failorTextMes.style.display = 'none';
         })
+    } else {
+        alert('you are success')
     }
+
+
+};
+
+
+document.getElementById('inp-service').addEventListener('click', function () {
+    const selectService = document.getElementById('accordionFlushExample');
+    selectService.style.display = 'block'
+
+})
+const service = () => {
+    const input = document.getElementById('inp-service');
+    const buton = document.getElementById('aco-but');
+    const accotext = buton.innerText;
+    input.value = accotext;
+    const display = document.getElementById('accordionFlushExample');
+    display.style.display = 'none'
+
+
+}
+const service2 = () => {
+    const input = document.getElementById('inp-service');
+    const buton = document.getElementById('aco-but2');
+    const accotext = buton.innerText;
+    input.value = accotext;
+    const display = document.getElementById('accordionFlushExample');
+    display.style.display = 'none'
+
+}
+const service3 = () => {
+    const input = document.getElementById('inp-service');
+    const buton = document.getElementById('aco-but3');
+    const accotext = buton.innerText;
+    input.value = accotext;
+    const display = document.getElementById('accordionFlushExample');
+    display.style.display = 'none'
 
 
 }

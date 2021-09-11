@@ -296,7 +296,15 @@ body{
      border:2px solid gainsboro;
      border-radius: 9px;
      text-align: center;
+     outline: none;
  }
+ #inp-service{
+     cursor: pointer;
+     
+ }
+#accordionFlushExample{
+    display: none;
+}
  #form-but{
      border: none;
      outline: none;
